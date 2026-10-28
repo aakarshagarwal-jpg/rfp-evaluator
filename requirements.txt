@@ -1,0 +1,8 @@
+streamlit>=1.50
+openai>=1.40
+pymupdf>=1.24
+pydantic>=2.6
+pandas>=2.0
+# development / sample generation
+reportlab>=4.0
+pytest>=8.0

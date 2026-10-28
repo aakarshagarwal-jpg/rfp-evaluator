@@ -1,0 +1,618 @@
+{
+  "rfp_run_id": "RFP-20261024-054325-19E934",
+  "created_at": "2026-10-24T05:43:25Z",
+  "status": "COMPLETED",
+  "evaluator": "offline-demo-heuristic",
+  "criteria": [
+    {
+      "criterion_id": 1,
+      "name": "Technical Capability",
+      "description": "Solution architecture, integrations/APIs, scalability, performance and overall technical fit to the requirement.",
+      "weight": 30.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 2,
+      "name": "Implementation Plan",
+      "description": "Timeline realism, milestones, team structure and staffing, methodology, dependencies and delivery risk plan.",
+      "weight": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 3,
+      "name": "Commercial Value",
+      "description": "Pricing clarity, total cost of ownership, payment terms, stated assumptions and exclusions.",
+      "weight": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 4,
+      "name": "Security & Compliance",
+      "description": "Security controls, certifications (e.g. ISO 27001, SOC 2), data privacy, encryption, access control and auditability.",
+      "weight": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 5,
+      "name": "Support & Experience",
+      "description": "Support model and SLAs, relevant similar projects, client references and years of experience.",
+      "weight": 10.0,
+      "max_score": 10
+    }
+  ],
+  "formulas": {
+    "absolute_score": "sum((score / max_score) * weight)",
+    "benchmark": "max(score) per criterion across suppliers in this run",
+    "gap": "score - benchmark",
+    "relative_pct": "(score / benchmark) * 100; 100 if benchmark == 0",
+    "ppi": "sum(relative_pct * weight) / sum(weight)"
+  },
+  "benchmarks": [
+    {
+      "criterion_id": 1,
+      "criterion_name": "Technical Capability",
+      "benchmark_score": 10.0,
+      "leaders": [
+        "Apex Systems"
+      ]
+    },
+    {
+      "criterion_id": 2,
+      "criterion_name": "Implementation Plan",
+      "benchmark_score": 10.0,
+      "leaders": [
+        "NexaWorks"
+      ]
+    },
+    {
+      "criterion_id": 3,
+      "criterion_name": "Commercial Value",
+      "benchmark_score": 7.0,
+      "leaders": [
+        "NexaWorks"
+      ]
+    },
+    {
+      "criterion_id": 4,
+      "criterion_name": "Security & Compliance",
+      "benchmark_score": 9.0,
+      "leaders": [
+        "Apex Systems"
+      ]
+    },
+    {
+      "criterion_id": 5,
+      "criterion_name": "Support & Experience",
+      "benchmark_score": 9.0,
+      "leaders": [
+        "NexaWorks"
+      ]
+    }
+  ],
+  "leaderboard": [
+    {
+      "final_rank": 1,
+      "supplier_name": "Apex Systems",
+      "absolute_score": 86.0,
+      "ppi": 94.0317,
+      "submission_date": "2026-10-10",
+      "experience_rating": 4.0
+    },
+    {
+      "final_rank": 2,
+      "supplier_name": "NexaWorks",
+      "absolute_score": 77.0,
+      "ppi": 85.7778,
+      "submission_date": "2026-10-12",
+      "experience_rating": 4.0
+    },
+    {
+      "final_rank": 3,
+      "supplier_name": "Orbit Digital",
+      "absolute_score": 29.0,
+      "ppi": 32.5714,
+      "submission_date": "2026-10-10",
+      "experience_rating": 4.5
+    },
+    {
+      "final_rank": 4,
+      "supplier_name": "BrightPath Tech",
+      "absolute_score": 14.0,
+      "ppi": 17.5397,
+      "submission_date": "2026-10-08",
+      "experience_rating": 2.5
+    }
+  ],
+  "suppliers": [
+    {
+      "supplier_name": "Apex Systems",
+      "submission_date": "2026-10-10",
+      "experience_rating": 4.0,
+      "file_name": "Apex_Systems_RFP_Response.pdf",
+      "absolute_score": 86.0,
+      "ppi": 94.0317,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "criterion_name": "Technical Capability",
+          "score": 10.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 15/16 indicator terms found.",
+          "evidence": "Proposed Solution and Architecture",
+          "validation_flags": [],
+          "weight": 30.0,
+          "weighted_points": 30.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        },
+        {
+          "criterion_id": 2,
+          "criterion_name": "Implementation Plan",
+          "score": 9.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 11/16 indicator terms found.",
+          "evidence": "Phase Weeks Key milestones",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 18.0,
+          "benchmark": 10.0,
+          "gap": -1.0,
+          "relative_pct": 90.0,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 3,
+          "criterion_name": "Commercial Value",
+          "score": 6.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 7/15 indicator terms found.",
+          "evidence": "Total 3-year cost of ownership 2,85,00,000",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 12.0,
+          "benchmark": 7.0,
+          "gap": -1.0,
+          "relative_pct": 85.7143,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 4,
+          "criterion_name": "Security & Compliance",
+          "score": 9.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 11/15 indicator terms found.",
+          "evidence": "\u2022 Certifications: ISO/IEC 27001:2022 (certified since 2019) and SOC 2 Type II (latest report dated March",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 18.0,
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        },
+        {
+          "criterion_id": 5,
+          "criterion_name": "Support & Experience",
+          "score": 8.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 8/13 indicator terms found.",
+          "evidence": "Support: 24x7 helpdesk; P1 response time 30 minutes, P2 2 hours; named customer success manager; quarterly",
+          "validation_flags": [],
+          "weight": 10.0,
+          "weighted_points": 8.0,
+          "benchmark": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "is_benchmark_leader": false
+        }
+      ],
+      "risks": [],
+      "overall_summary": "Generated by offline demo heuristic (no LLM).",
+      "warnings": [],
+      "final_rank": 1,
+      "rank_basis": "Highest PPI"
+    },
+    {
+      "supplier_name": "NexaWorks",
+      "submission_date": "2026-10-12",
+      "experience_rating": 4.0,
+      "file_name": "NexaWorks_RFP_Response.pdf",
+      "absolute_score": 77.0,
+      "ppi": 85.7778,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "criterion_name": "Technical Capability",
+          "score": 6.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 8/16 indicator terms found.",
+          "evidence": "\u2022 REST API integration with SAP S/4HANA via SAP Integration Suite; order and inventory events every 60",
+          "validation_flags": [],
+          "weight": 30.0,
+          "weighted_points": 18.0,
+          "benchmark": 10.0,
+          "gap": -4.0,
+          "relative_pct": 60.0,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 2,
+          "criterion_name": "Implementation Plan",
+          "score": 10.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 14/16 indicator terms found.",
+          "evidence": "Implementation Plan, Team and Milestones",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 20.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        },
+        {
+          "criterion_id": 3,
+          "criterion_name": "Commercial Value",
+          "score": 7.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 8/15 indicator terms found.",
+          "evidence": "Total 3-year cost of ownership 2,10,00,000",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 14.0,
+          "benchmark": 7.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        },
+        {
+          "criterion_id": 4,
+          "criterion_name": "Security & Compliance",
+          "score": 8.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 9/15 indicator terms found.",
+          "evidence": "\u2022 ISO/IEC 27001:2022 certified; SOC 2 Type I completed, Type II audit scheduled for Q1 2027.",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 16.0,
+          "benchmark": 9.0,
+          "gap": -1.0,
+          "relative_pct": 88.8889,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 5,
+          "criterion_name": "Support & Experience",
+          "score": 9.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 9/13 indicator terms found.",
+          "evidence": "disciplined, low-risk implementation programme and backed by a 24x7 managed support service.",
+          "validation_flags": [],
+          "weight": 10.0,
+          "weighted_points": 9.0,
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        }
+      ],
+      "risks": [],
+      "overall_summary": "Generated by offline demo heuristic (no LLM).",
+      "warnings": [],
+      "final_rank": 2,
+      "rank_basis": "Below Apex Systems by: Higher PPI"
+    },
+    {
+      "supplier_name": "Orbit Digital",
+      "submission_date": "2026-10-10",
+      "experience_rating": 4.5,
+      "file_name": "Orbit_Digital_RFP_Response.pdf",
+      "absolute_score": 29.0,
+      "ppi": 32.5714,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "criterion_name": "Technical Capability",
+          "score": 2.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 4/16 indicator terms found; 3 hedging phrase(s) penalised.",
+          "evidence": "RFP KRL-2026-07 \u00b7 Cloud Order Management Platform with ERP Integration \u00b7 Kestrel Retail Ltd",
+          "validation_flags": [],
+          "weight": 30.0,
+          "weighted_points": 6.0,
+          "benchmark": 10.0,
+          "gap": -8.0,
+          "relative_pct": 20.0,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 2,
+          "criterion_name": "Implementation Plan",
+          "score": 4.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 6/16 indicator terms found; 3 hedging phrase(s) penalised.",
+          "evidence": "Phase Weeks",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 8.0,
+          "benchmark": 10.0,
+          "gap": -6.0,
+          "relative_pct": 40.0,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 3,
+          "criterion_name": "Commercial Value",
+          "score": 3.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 5/15 indicator terms found; 3 hedging phrase(s) penalised.",
+          "evidence": "Total 3-year cost 2,20,00,000",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 6.0,
+          "benchmark": 7.0,
+          "gap": -4.0,
+          "relative_pct": 42.8571,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 4,
+          "criterion_name": "Security & Compliance",
+          "score": 2.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 4/15 indicator terms found; 3 hedging phrase(s) penalised.",
+          "evidence": "\u2022 ISO/IEC 27001 certified since 2016; SOC 2 Type II report available under NDA.",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 4.0,
+          "benchmark": 9.0,
+          "gap": -7.0,
+          "relative_pct": 22.2222,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 5,
+          "criterion_name": "Support & Experience",
+          "score": 5.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 6/13 indicator terms found; 3 hedging phrase(s) penalised.",
+          "evidence": "Support: 24x7 for P1 incidents with 30-minute response; business-hours support for other issues; dedicated",
+          "validation_flags": [],
+          "weight": 10.0,
+          "weighted_points": 5.0,
+          "benchmark": 9.0,
+          "gap": -4.0,
+          "relative_pct": 55.5556,
+          "is_benchmark_leader": false
+        }
+      ],
+      "risks": [
+        "Hedged commitment: 'to be confirmed'",
+        "Hedged commitment: 'to be determined'",
+        "Hedged commitment: 'subject to discovery'"
+      ],
+      "overall_summary": "Generated by offline demo heuristic (no LLM).",
+      "warnings": [],
+      "final_rank": 3,
+      "rank_basis": "Below NexaWorks by: Higher PPI"
+    },
+    {
+      "supplier_name": "BrightPath Tech",
+      "submission_date": "2026-10-08",
+      "experience_rating": 2.5,
+      "file_name": "BrightPath_Tech_RFP_Response.pdf",
+      "absolute_score": 14.0,
+      "ppi": 17.5397,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "criterion_name": "Technical Capability",
+          "score": 1.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 5/16 indicator terms found; 6 hedging phrase(s) penalised.",
+          "evidence": "\u2022 ERP integration through CSV file exports scheduled every 4 hours; real-time API integration planned for a",
+          "validation_flags": [],
+          "weight": 30.0,
+          "weighted_points": 3.0,
+          "benchmark": 10.0,
+          "gap": -9.0,
+          "relative_pct": 10.0,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 2,
+          "criterion_name": "Implementation Plan",
+          "score": 1.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 5/16 indicator terms found; 6 hedging phrase(s) penalised.",
+          "evidence": "Ready in 12 weeks.",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 2.0,
+          "benchmark": 10.0,
+          "gap": -9.0,
+          "relative_pct": 10.0,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 3,
+          "criterion_name": "Commercial Value",
+          "score": 4.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 8/15 indicator terms found; 6 hedging phrase(s) penalised.",
+          "evidence": "deliver a working platform in just 12 weeks at the lowest total cost in the market.",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 8.0,
+          "benchmark": 7.0,
+          "gap": -3.0,
+          "relative_pct": 57.1429,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 4,
+          "criterion_name": "Security & Compliance",
+          "score": 0.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 0/15 indicator terms found; 6 hedging phrase(s) penalised.",
+          "evidence": "Not stated in proposal",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 0.0,
+          "benchmark": 9.0,
+          "gap": -9.0,
+          "relative_pct": 0.0,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 5,
+          "criterion_name": "Support & Experience",
+          "score": 1.0,
+          "max_score": 10.0,
+          "justification": "Offline heuristic: 3/13 indicator terms found; 6 hedging phrase(s) penalised.",
+          "evidence": "References available on request.",
+          "validation_flags": [],
+          "weight": 10.0,
+          "weighted_points": 1.0,
+          "benchmark": 9.0,
+          "gap": -8.0,
+          "relative_pct": 11.1111,
+          "is_benchmark_leader": false
+        }
+      ],
+      "risks": [
+        "Hedged commitment: 'to be confirmed'",
+        "Hedged commitment: 'will be shared later'",
+        "Hedged commitment: 'not included'"
+      ],
+      "overall_summary": "Generated by offline demo heuristic (no LLM).",
+      "warnings": [],
+      "final_rank": 4,
+      "rank_basis": "Below Orbit Digital by: Higher PPI"
+    }
+  ],
+  "tie_break_order": [
+    "Higher PPI",
+    "Earlier submission date",
+    "Higher historical experience rating",
+    "Supplier name (A\u2192Z)"
+  ],
+  "tie_break_explanations": [
+    "No PPI ties occurred; ranking determined by PPI alone (rule 1)."
+  ],
+  "warnings": [],
+  "documents": [
+    {
+      "supplier_name": "Apex Systems",
+      "file_name": "Apex_Systems_RFP_Response.pdf",
+      "pages": 2,
+      "characters": 3840
+    },
+    {
+      "supplier_name": "BrightPath Tech",
+      "file_name": "BrightPath_Tech_RFP_Response.pdf",
+      "pages": 2,
+      "characters": 3925
+    },
+    {
+      "supplier_name": "NexaWorks",
+      "file_name": "NexaWorks_RFP_Response.pdf",
+      "pages": 2,
+      "characters": 4135
+    },
+    {
+      "supplier_name": "Orbit Digital",
+      "file_name": "Orbit_Digital_RFP_Response.pdf",
+      "pages": 2,
+      "characters": 2668
+    }
+  ],
+  "trace": [
+    {
+      "step": "Input",
+      "actor": "Orchestrator",
+      "detail": "4 supplier submissions validated",
+      "elapsed_s": 0.0
+    },
+    {
+      "step": "Setup",
+      "actor": "SQLite",
+      "detail": "5 active criteria loaded (weights total 100%)",
+      "elapsed_s": 0.0
+    },
+    {
+      "step": "Extract",
+      "actor": "Document Tool",
+      "detail": "text extracted from 4 PDFs",
+      "elapsed_s": 0.1
+    },
+    {
+      "step": "Batch",
+      "actor": "Orchestrator",
+      "detail": "run RFP-20261024-054325-19E934 created",
+      "elapsed_s": 0.11
+    },
+    {
+      "step": "Evaluate",
+      "actor": "Evaluation Agent",
+      "detail": "Apex Systems scored by offline-demo-heuristic",
+      "elapsed_s": 0.11
+    },
+    {
+      "step": "Validate",
+      "actor": "Validation Tool",
+      "detail": "Apex Systems: 0 warning(s) after normalisation",
+      "elapsed_s": 0.11
+    },
+    {
+      "step": "Evaluate",
+      "actor": "Evaluation Agent",
+      "detail": "BrightPath Tech scored by offline-demo-heuristic",
+      "elapsed_s": 0.11
+    },
+    {
+      "step": "Validate",
+      "actor": "Validation Tool",
+      "detail": "BrightPath Tech: 0 warning(s) after normalisation",
+      "elapsed_s": 0.11
+    },
+    {
+      "step": "Evaluate",
+      "actor": "Evaluation Agent",
+      "detail": "NexaWorks scored by offline-demo-heuristic",
+      "elapsed_s": 0.11
+    },
+    {
+      "step": "Validate",
+      "actor": "Validation Tool",
+      "detail": "NexaWorks: 0 warning(s) after normalisation",
+      "elapsed_s": 0.11
+    },
+    {
+      "step": "Evaluate",
+      "actor": "Evaluation Agent",
+      "detail": "Orbit Digital scored by offline-demo-heuristic",
+      "elapsed_s": 0.11
+    },
+    {
+      "step": "Validate",
+      "actor": "Validation Tool",
+      "detail": "Orbit Digital: 0 warning(s) after normalisation",
+      "elapsed_s": 0.11
+    },
+    {
+      "step": "Rank",
+      "actor": "Ranking Tool",
+      "detail": "absolute scores, benchmarks, PPI and tie-breaks computed",
+      "elapsed_s": 0.11
+    },
+    {
+      "step": "Persist",
+      "actor": "SQLite",
+      "detail": "4 supplier rows written under RFP-20261024-054325-19E934",
+      "elapsed_s": 0.11
+    }
+  ]
+}
