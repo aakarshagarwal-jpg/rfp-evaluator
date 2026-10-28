@@ -1,0 +1,640 @@
+{
+  "rfp_run_id": "RFP-20261028-140533-012F53",
+  "created_at": "2026-10-28T14:05:33Z",
+  "status": "COMPLETED",
+  "evaluator": "openai:gpt-4o-mini",
+  "criteria": [
+    {
+      "criterion_id": 1,
+      "name": "Technical Capability",
+      "description": "Solution architecture, integrations/APIs, scalability, performance and overall technical fit to the requirement.",
+      "weight": 30.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 2,
+      "name": "Implementation Plan",
+      "description": "Timeline realism, milestones, team structure and staffing, methodology, dependencies and delivery risk plan.",
+      "weight": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 3,
+      "name": "Commercial Value",
+      "description": "Pricing clarity, total cost of ownership, payment terms, stated assumptions and exclusions.",
+      "weight": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 4,
+      "name": "Security & Compliance",
+      "description": "Security controls, certifications (e.g. ISO 27001, SOC 2), data privacy, encryption, access control and auditability.",
+      "weight": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 5,
+      "name": "Support & Experience",
+      "description": "Support model and SLAs, relevant similar projects, client references and years of experience.",
+      "weight": 10.0,
+      "max_score": 10
+    }
+  ],
+  "formulas": {
+    "absolute_score": "sum((score / max_score) * weight)",
+    "benchmark": "max(score) per criterion across suppliers in this run",
+    "gap": "score - benchmark",
+    "relative_pct": "(score / benchmark) * 100; 100 if benchmark == 0",
+    "ppi": "sum(relative_pct * weight) / sum(weight)"
+  },
+  "benchmarks": [
+    {
+      "criterion_id": 1,
+      "criterion_name": "Technical Capability",
+      "benchmark_score": 9.0,
+      "leaders": [
+        "Apex Systems RFP",
+        "NexaWorks RFP"
+      ]
+    },
+    {
+      "criterion_id": 2,
+      "criterion_name": "Implementation Plan",
+      "benchmark_score": 8.0,
+      "leaders": [
+        "Apex Systems RFP",
+        "NexaWorks RFP",
+        "Orbit Digital RFP"
+      ]
+    },
+    {
+      "criterion_id": 3,
+      "criterion_name": "Commercial Value",
+      "benchmark_score": 8.0,
+      "leaders": [
+        "Apex Systems RFP",
+        "NexaWorks RFP",
+        "BrightPath Tech RFP"
+      ]
+    },
+    {
+      "criterion_id": 4,
+      "criterion_name": "Security & Compliance",
+      "benchmark_score": 9.0,
+      "leaders": [
+        "Apex Systems RFP",
+        "NexaWorks RFP",
+        "Orbit Digital RFP"
+      ]
+    },
+    {
+      "criterion_id": 5,
+      "criterion_name": "Support & Experience",
+      "benchmark_score": 8.0,
+      "leaders": [
+        "Apex Systems RFP",
+        "NexaWorks RFP",
+        "Orbit Digital RFP"
+      ]
+    }
+  ],
+  "leaderboard": [
+    {
+      "final_rank": 1,
+      "supplier_name": "Apex Systems RFP",
+      "absolute_score": 85.0,
+      "ppi": 100.0,
+      "submission_date": "2026-10-10",
+      "experience_rating": 3.0
+    },
+    {
+      "final_rank": 2,
+      "supplier_name": "NexaWorks RFP",
+      "absolute_score": 85.0,
+      "ppi": 100.0,
+      "submission_date": "2026-10-28",
+      "experience_rating": 3.0
+    },
+    {
+      "final_rank": 3,
+      "supplier_name": "Orbit Digital RFP",
+      "absolute_score": 75.0,
+      "ppi": 88.3333,
+      "submission_date": "2026-10-28",
+      "experience_rating": 3.0
+    },
+    {
+      "final_rank": 4,
+      "supplier_name": "BrightPath Tech RFP",
+      "absolute_score": 63.0,
+      "ppi": 74.4444,
+      "submission_date": "2026-10-28",
+      "experience_rating": 3.0
+    }
+  ],
+  "suppliers": [
+    {
+      "supplier_name": "Apex Systems RFP",
+      "submission_date": "2026-10-10",
+      "experience_rating": 3.0,
+      "file_name": "Apex_Systems_RFP_Response.pdf",
+      "absolute_score": 85.0,
+      "ppi": 100.0,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "criterion_name": "Technical Capability",
+          "score": 9.0,
+          "max_score": 10.0,
+          "justification": "The proposal provides a detailed technical architecture with specific technologies and performance metrics, demonstrating strong technical capability.",
+          "evidence": "Microservices on Kubernetes (AWS EKS, Mumbai region ap-south-1) with multi-AZ high availability and a 99.95% uptime design target. [Page 1]",
+          "validation_flags": [],
+          "weight": 30.0,
+          "weighted_points": 27.0,
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        },
+        {
+          "criterion_id": 2,
+          "criterion_name": "Implementation Plan",
+          "score": 8.0,
+          "max_score": 10.0,
+          "justification": "The implementation plan outlines a clear timeline with phases and milestones, though some details on methodology could be expanded.",
+          "evidence": "Delivery follows a phased approach over 24 weeks: Discovery & design 1\u20135, Build & integrate 6\u201315, Testing 16\u201320, Go-live & hypercare 21\u201324. [Page 1]",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 16.0,
+          "benchmark": 8.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        },
+        {
+          "criterion_id": 3,
+          "criterion_name": "Commercial Value",
+          "score": 8.0,
+          "max_score": 10.0,
+          "justification": "The commercial proposal is clear with detailed pricing and assumptions, but lacks information on total cost of ownership breakdown.",
+          "evidence": "Total 3-year cost of ownership 2,85,00,000. Assumptions: prices exclude GST; Kestrel provides SAP basis access. [Page 1]",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 16.0,
+          "benchmark": 8.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        },
+        {
+          "criterion_id": 4,
+          "criterion_name": "Security & Compliance",
+          "score": 9.0,
+          "max_score": 10.0,
+          "justification": "The proposal includes specific security certifications and detailed security measures, demonstrating a strong commitment to compliance.",
+          "evidence": "Certifications: ISO/IEC 27001:2022 (certified since 2019) and SOC 2 Type II. [Page 1]",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 18.0,
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        },
+        {
+          "criterion_id": 5,
+          "criterion_name": "Support & Experience",
+          "score": 8.0,
+          "max_score": 10.0,
+          "justification": "The support model is well-defined with SLAs and relevant experience, though references are fictional and may not provide verifiable credibility.",
+          "evidence": "Support: 24x7 helpdesk; P1 response time 30 minutes, P2 2 hours; named customer success manager. [Page 2]",
+          "validation_flags": [],
+          "weight": 10.0,
+          "weighted_points": 8.0,
+          "benchmark": 8.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        }
+      ],
+      "risks": [
+        "Some references are fictional, which may affect credibility."
+      ],
+      "overall_summary": "Apex Systems presents a strong proposal with detailed technical capabilities and a clear implementation plan. While the commercial aspects are mostly clear, the fictional nature of references raises some concerns about verifiability.",
+      "warnings": [
+        "[Apex Systems RFP] Evaluator named the supplier 'Apex Systems'; the user-entered name is used instead."
+      ],
+      "final_rank": 1,
+      "rank_basis": "Tied on PPI with NexaWorks RFP; placed first by: Earlier submission date"
+    },
+    {
+      "supplier_name": "NexaWorks RFP",
+      "submission_date": "2026-10-28",
+      "experience_rating": 3.0,
+      "file_name": "NexaWorks_RFP_Response.pdf",
+      "absolute_score": 85.0,
+      "ppi": 100.0,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "criterion_name": "Technical Capability",
+          "score": 9.0,
+          "max_score": 10.0,
+          "justification": "The proposal outlines a robust technical architecture with specific details on integrations, scalability, and performance metrics, demonstrating a strong technical fit.",
+          "evidence": "NexaOMS SaaS on Microsoft Azure... REST API integration with SAP S/4HANA via SAP Integration Suite; order and inventory events every 60 seconds. [Page 1]",
+          "validation_flags": [],
+          "weight": 30.0,
+          "weighted_points": 27.0,
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        },
+        {
+          "criterion_id": 2,
+          "criterion_name": "Implementation Plan",
+          "score": 8.0,
+          "max_score": 10.0,
+          "justification": "The implementation plan is detailed with a clear timeline, milestones, and team structure, although some risks could be elaborated further.",
+          "evidence": "Methodology: hybrid waterfall-agile with 2-week sprints inside four gated phases over 18 weeks. [Page 1]",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 16.0,
+          "benchmark": 8.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        },
+        {
+          "criterion_id": 3,
+          "criterion_name": "Commercial Value",
+          "score": 8.0,
+          "max_score": 10.0,
+          "justification": "The commercial proposal provides clear pricing and total cost of ownership, but lacks detail on payment terms and assumptions.",
+          "evidence": "Total 3-year cost of ownership 2,10,00,000. Assumptions: prices exclude GST; includes 3 connectors... [Page 1]",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 16.0,
+          "benchmark": 8.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        },
+        {
+          "criterion_id": 4,
+          "criterion_name": "Security & Compliance",
+          "score": 9.0,
+          "max_score": 10.0,
+          "justification": "The proposal includes specific security certifications and controls, demonstrating a strong commitment to security and compliance.",
+          "evidence": "ISO/IEC 27001:2022 certified; SOC 2 Type I completed, Type II audit scheduled for Q1 2027. [Page 2]",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 18.0,
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        },
+        {
+          "criterion_id": 5,
+          "criterion_name": "Support & Experience",
+          "score": 8.0,
+          "max_score": 10.0,
+          "justification": "The support model is well-defined with SLAs and experience in similar projects, though references are fictional.",
+          "evidence": "Experience: 11 years; 21 OMS implementations in retail and consumer goods, 9 with SAP integration. [Page 2]",
+          "validation_flags": [],
+          "weight": 10.0,
+          "weighted_points": 8.0,
+          "benchmark": 8.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        }
+      ],
+      "risks": [
+        "Some risks in the implementation plan could be elaborated further for clarity."
+      ],
+      "overall_summary": "NexaWorks presents a strong proposal with detailed technical capabilities and a solid implementation plan. While there are minor gaps in commercial clarity and risk elaboration, the overall offering is robust and well-structured.",
+      "warnings": [
+        "[NexaWorks RFP] Evaluator named the supplier 'NexaWorks'; the user-entered name is used instead."
+      ],
+      "final_rank": 2,
+      "rank_basis": "Below Apex Systems RFP by: Earlier submission date"
+    },
+    {
+      "supplier_name": "Orbit Digital RFP",
+      "submission_date": "2026-10-28",
+      "experience_rating": 3.0,
+      "file_name": "Orbit_Digital_RFP_Response.pdf",
+      "absolute_score": 75.0,
+      "ppi": 88.3333,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "criterion_name": "Technical Capability",
+          "score": 7.0,
+          "max_score": 10.0,
+          "justification": "The proposal outlines a mature platform with scalability and integration potential, but lacks detailed specifics on integrations and performance metrics.",
+          "evidence": "The platform scales to meet the needs of large retailers. [Page 1]",
+          "validation_flags": [],
+          "weight": 30.0,
+          "weighted_points": 21.0,
+          "benchmark": 9.0,
+          "gap": -2.0,
+          "relative_pct": 77.7778,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 2,
+          "criterion_name": "Implementation Plan",
+          "score": 8.0,
+          "max_score": 10.0,
+          "justification": "The implementation plan is well-structured with a clear timeline and dedicated team, though team size confirmation is pending.",
+          "evidence": "A dedicated team led by a senior project manager will be assigned. [Page 1]",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 16.0,
+          "benchmark": 8.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        },
+        {
+          "criterion_id": 3,
+          "criterion_name": "Commercial Value",
+          "score": 6.0,
+          "max_score": 10.0,
+          "justification": "Pricing is clear, but the assumptions regarding potential changes in costs could lead to uncertainty.",
+          "evidence": "Assumptions: implementation cost is an estimate and may change after discovery. [Page 1]",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 12.0,
+          "benchmark": 8.0,
+          "gap": -2.0,
+          "relative_pct": 75.0,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 4,
+          "criterion_name": "Security & Compliance",
+          "score": 9.0,
+          "max_score": 10.0,
+          "justification": "Strong security measures and certifications are provided, demonstrating a commitment to compliance.",
+          "evidence": "ISO/IEC 27001 certified since 2016; SOC 2 Type II report available under NDA. [Page 1]",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 18.0,
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        },
+        {
+          "criterion_id": 5,
+          "criterion_name": "Support & Experience",
+          "score": 8.0,
+          "max_score": 10.0,
+          "justification": "The support model is robust with clear SLAs and relevant experience, though references are fictional.",
+          "evidence": "Support: 24x7 for P1 incidents with 30-minute response; business-hours support for other issues. [Page 1]",
+          "validation_flags": [],
+          "weight": 10.0,
+          "weighted_points": 8.0,
+          "benchmark": 8.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        }
+      ],
+      "risks": [
+        "Potential changes in implementation costs after discovery could impact budget."
+      ],
+      "overall_summary": "Orbit Digital presents a strong proposal with a mature platform and a clear implementation plan. While there are some uncertainties in pricing and team size, their security measures and support structure are commendable.",
+      "warnings": [
+        "[Orbit Digital RFP] Evaluator named the supplier 'Orbit Digital'; the user-entered name is used instead."
+      ],
+      "final_rank": 3,
+      "rank_basis": "Below NexaWorks RFP by: Higher PPI"
+    },
+    {
+      "supplier_name": "BrightPath Tech RFP",
+      "submission_date": "2026-10-28",
+      "experience_rating": 3.0,
+      "file_name": "BrightPath_Tech_RFP_Response.pdf",
+      "absolute_score": 63.0,
+      "ppi": 74.4444,
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "criterion_name": "Technical Capability",
+          "score": 7.0,
+          "max_score": 10.0,
+          "justification": "The proposal outlines a cloud-based solution with scalability and integration capabilities, but lacks detailed performance metrics.",
+          "evidence": "Our BrightOrder product runs on a single cloud server cluster with nightly scaling. [Page 1]",
+          "validation_flags": [],
+          "weight": 30.0,
+          "weighted_points": 21.0,
+          "benchmark": 9.0,
+          "gap": -2.0,
+          "relative_pct": 77.7778,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 2,
+          "criterion_name": "Implementation Plan",
+          "score": 6.0,
+          "max_score": 10.0,
+          "justification": "The implementation plan includes a timeline and team structure, but lacks detail on methodology and risk management.",
+          "evidence": "Setup 1\u20132 Environment ready; Configuration 3\u20138 Order flows configured; Testing & launch 9\u201312 Go-live. [Page 1]",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 12.0,
+          "benchmark": 8.0,
+          "gap": -2.0,
+          "relative_pct": 75.0,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 3,
+          "criterion_name": "Commercial Value",
+          "score": 8.0,
+          "max_score": 10.0,
+          "justification": "Pricing is clearly stated with total cost and assumptions, but lacks detail on payment terms.",
+          "evidence": "Total 3-year cost 1,35,00,000; Assumptions: price assumes standard configuration only. [Page 1]",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 16.0,
+          "benchmark": 8.0,
+          "gap": 0.0,
+          "relative_pct": 100.0,
+          "is_benchmark_leader": true
+        },
+        {
+          "criterion_id": 4,
+          "criterion_name": "Security & Compliance",
+          "score": 5.0,
+          "max_score": 10.0,
+          "justification": "The proposal mentions ISO 27001 certification in progress and general security practices, but lacks specifics on controls.",
+          "evidence": "ISO 27001 certification is in progress. Detailed security policies will be shared later on request. [Page 1]",
+          "validation_flags": [],
+          "weight": 20.0,
+          "weighted_points": 10.0,
+          "benchmark": 9.0,
+          "gap": -4.0,
+          "relative_pct": 55.5556,
+          "is_benchmark_leader": false
+        },
+        {
+          "criterion_id": 5,
+          "criterion_name": "Support & Experience",
+          "score": 4.0,
+          "max_score": 10.0,
+          "justification": "Support details are provided, but the company's experience is limited and lacks extensive client references.",
+          "evidence": "BrightPath was founded in 2023 and has completed 2 order management projects for small online stores. [Page 1]",
+          "validation_flags": [],
+          "weight": 10.0,
+          "weighted_points": 4.0,
+          "benchmark": 8.0,
+          "gap": -4.0,
+          "relative_pct": 50.0,
+          "is_benchmark_leader": false
+        }
+      ],
+      "risks": [
+        "Limited experience with larger clients may pose a risk in meeting enterprise-level requirements."
+      ],
+      "overall_summary": "BrightPath Tech presents a competitive proposal with a clear implementation timeline and pricing structure. However, gaps in security specifics and limited experience may affect their ability to meet all enterprise needs.",
+      "warnings": [
+        "[BrightPath Tech RFP] Evaluator named the supplier 'BrightPath Tech'; the user-entered name is used instead."
+      ],
+      "final_rank": 4,
+      "rank_basis": "Below Orbit Digital RFP by: Higher PPI"
+    }
+  ],
+  "tie_break_order": [
+    "Higher PPI",
+    "Earlier submission date",
+    "Higher historical experience rating",
+    "Supplier name (A\u2192Z)"
+  ],
+  "tie_break_explanations": [
+    "Apex Systems RFP and NexaWorks RFP tied on PPI (100.0000); resolved by rule 2 \u2013 Earlier submission date (2026-10-10 vs 2026-10-28)."
+  ],
+  "warnings": [
+    "[Apex Systems RFP] Evaluator named the supplier 'Apex Systems'; the user-entered name is used instead.",
+    "[BrightPath Tech RFP] Evaluator named the supplier 'BrightPath Tech'; the user-entered name is used instead.",
+    "[NexaWorks RFP] Evaluator named the supplier 'NexaWorks'; the user-entered name is used instead.",
+    "[Orbit Digital RFP] Evaluator named the supplier 'Orbit Digital'; the user-entered name is used instead."
+  ],
+  "documents": [
+    {
+      "supplier_name": "Apex Systems RFP",
+      "file_name": "Apex_Systems_RFP_Response.pdf",
+      "pages": 2,
+      "characters": 3840
+    },
+    {
+      "supplier_name": "BrightPath Tech RFP",
+      "file_name": "BrightPath_Tech_RFP_Response.pdf",
+      "pages": 2,
+      "characters": 3925
+    },
+    {
+      "supplier_name": "NexaWorks RFP",
+      "file_name": "NexaWorks_RFP_Response.pdf",
+      "pages": 2,
+      "characters": 4135
+    },
+    {
+      "supplier_name": "Orbit Digital RFP",
+      "file_name": "Orbit_Digital_RFP_Response.pdf",
+      "pages": 2,
+      "characters": 2668
+    }
+  ],
+  "trace": [
+    {
+      "step": "Input",
+      "actor": "Orchestrator",
+      "detail": "4 supplier submissions validated",
+      "elapsed_s": 0.0
+    },
+    {
+      "step": "Setup",
+      "actor": "SQLite",
+      "detail": "5 active criteria loaded (weights total 100%)",
+      "elapsed_s": 0.0
+    },
+    {
+      "step": "Extract",
+      "actor": "Document Tool",
+      "detail": "text extracted from 4 PDFs",
+      "elapsed_s": 0.16
+    },
+    {
+      "step": "Batch",
+      "actor": "Orchestrator",
+      "detail": "run RFP-20261028-140533-012F53 created",
+      "elapsed_s": 0.19
+    },
+    {
+      "step": "Evaluate",
+      "actor": "Evaluation Agent",
+      "detail": "Apex Systems RFP scored by openai:gpt-4o-mini",
+      "elapsed_s": 7.4
+    },
+    {
+      "step": "Validate",
+      "actor": "Validation Tool",
+      "detail": "Apex Systems RFP: 1 warning(s) after normalisation",
+      "elapsed_s": 7.4
+    },
+    {
+      "step": "Evaluate",
+      "actor": "Evaluation Agent",
+      "detail": "BrightPath Tech RFP scored by openai:gpt-4o-mini",
+      "elapsed_s": 13.54
+    },
+    {
+      "step": "Validate",
+      "actor": "Validation Tool",
+      "detail": "BrightPath Tech RFP: 1 warning(s) after normalisation",
+      "elapsed_s": 13.54
+    },
+    {
+      "step": "Evaluate",
+      "actor": "Evaluation Agent",
+      "detail": "NexaWorks RFP scored by openai:gpt-4o-mini",
+      "elapsed_s": 20.47
+    },
+    {
+      "step": "Validate",
+      "actor": "Validation Tool",
+      "detail": "NexaWorks RFP: 1 warning(s) after normalisation",
+      "elapsed_s": 20.47
+    },
+    {
+      "step": "Evaluate",
+      "actor": "Evaluation Agent",
+      "detail": "Orbit Digital RFP scored by openai:gpt-4o-mini",
+      "elapsed_s": 26.37
+    },
+    {
+      "step": "Validate",
+      "actor": "Validation Tool",
+      "detail": "Orbit Digital RFP: 1 warning(s) after normalisation",
+      "elapsed_s": 26.37
+    },
+    {
+      "step": "Rank",
+      "actor": "Ranking Tool",
+      "detail": "absolute scores, benchmarks, PPI and tie-breaks computed",
+      "elapsed_s": 26.37
+    },
+    {
+      "step": "Persist",
+      "actor": "SQLite",
+      "detail": "4 supplier rows written under RFP-20261028-140533-012F53",
+      "elapsed_s": 26.37
+    }
+  ]
+}
